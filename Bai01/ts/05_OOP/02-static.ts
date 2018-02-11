@@ -1,4 +1,4 @@
-/*enum TasKStatus {
+enum TasKStatus {
 	Created = 100,
 	Active,
 	InActive,
@@ -12,16 +12,24 @@ interface TaskInterface {
 	status?: TasKStatus;
 }
 
+// static gọi trực tiếp không cần khởi tạo
 class TaskService {
-	tasks: TaskInterface[];
+	public static username: string = "John";
+	static tasks: TaskInterface[];
 
 	constructor(tasks: TaskInterface[]) {
-		this.tasks = tasks;
+		TaskService.tasks = tasks;
 	}
 
 	getItem() {
-		return this.tasks;
+		return TaskService.tasks;
 	}
+
+	static showItemInfo() {
+		for(let task of TaskService.tasks) 
+			console.log(TaskService.username + " - " + task.name);
+	}
+
 } 
 
 let task1: TaskInterface = {id: 1, name: "Coding"};
@@ -35,4 +43,8 @@ let tasks: TaskInterface[] = [
 ];
 
 let taskServiceObj = new TaskService(tasks);
-console.log(taskServiceObj.getItem());*/
+console.log(taskServiceObj.getItem());
+
+console.log(TaskService.username);
+
+TaskService.showItemInfo();

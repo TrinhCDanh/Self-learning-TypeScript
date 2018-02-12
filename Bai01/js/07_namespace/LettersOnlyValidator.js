@@ -1,4 +1,4 @@
-/// <reference path="Validation.ts" />
+/*/// <reference path="Validation.ts" />
 namespace Validation {
     const lettersRegexp = /^[A-Za-z]+$/;
     export class LettersOnlyValidator implements StringValidator {
@@ -6,4 +6,4 @@ namespace Validation {
             return lettersRegexp.test(s);
         }
     }
-}
+}*/ 

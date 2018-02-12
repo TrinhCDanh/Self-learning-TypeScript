@@ -4,6 +4,7 @@
 	<title>TypeScript Tranning</title>
 </head>
 <body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- <script type="text/javascript" src="js/03_variable/01-basic-types.js"></script> -->
 	<!-- <script type="text/javascript" src="js/03_variable/02-array.js"></script> -->
 	<!-- <script type="text/javascript" src="js/03_variable/03-tuple.js"></script> -->
@@ -31,10 +32,18 @@
 	<script type="text/javascript" src="js/06_generic/01-basic.js"></script>
 	<script type="text/javascript" src="js/06_generic/02-method.js"></script>
 	<script type="text/javascript" src="js/06_generic/03-class.js"></script>-->
-	<script type="text/javascript" src="js/07_module_namespace/Validation.js"></script>
-	<script type="text/javascript" src="js/07_module_namespace/LettersOnlyValidator.js"></script>
-	<script type="text/javascript" src="js/07_module_namespace/ZipCodeValidator.js"></script>
-	<script type="text/javascript" src="js/07_module_namespace/Test.js"></script>
+	<!--<script type="text/javascript" src="js/07_namespace/Validation.js"></script>
+	<script type="text/javascript" src="js/07_namespace/LettersOnlyValidator.js"></script>
+	<script type="text/javascript" src="js/07_namespace/ZipCodeValidator.js"></script>
+	<script type="text/javascript" src="js/07_namespace/Test.js"></script>-->
+
+	<script type="text/javascript" src="js/system.js"></script>
+	<script type="text/javascript">
+		// run on localhost
+		System.defaultJSExtensions = true;
+		System.import('./js/08_module/Test.js');
+	</script>
+
 
 </body>
 </html>

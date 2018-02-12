@@ -9,6 +9,6 @@ class Task {
         console.log(`${this.id} - ${this.name} - ${this.status}`);
     }
 }
-let taskObj1 = new Task(001, "play game", "created");
+let taskObj1 = new Task(1, "play game", "created");
 taskObj1.showTaskInfo();
 console.log(taskObj1);

@@ -16,6 +16,6 @@ class Task {
 }
 
 
-let taskObj1 = new Task(001, "play game", "created");
+let taskObj1 = new Task(1, "play game", "created");
 taskObj1.showTaskInfo()
 console.log(taskObj1);

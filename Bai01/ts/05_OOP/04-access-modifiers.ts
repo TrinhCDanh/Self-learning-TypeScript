@@ -1,7 +1,7 @@
-/*class Course {
-	id: string;
-	name: string;
-	price: number;
+class Course {
+	public id: string;
+	private name: string;
+	protected price: number;
 
 	constructor(id: string, name: string, price: number) {
 		this.id = id;
@@ -21,14 +21,23 @@ class CourseMobile extends Course {
 		this.author = author;
 	}
 
-	showCourseInfo() {
+	/*showCourseInfo() {
 		super.showCourseInfo();
-		console.log(this.author);
+		console.log(this.author);*/
 	}
 }
 
 var courseObj = new Course('C012', 'Mobile', 23);
-courseObj.showCourseInfo();
+// courseObj.showCourseInfo();
+console.log(courseObj.id);
 
 var courseMobileObj = new CourseMobile('C013', 'Mobile', 23, "John");
-courseMobileObj.showCourseInfo();*/
+// courseMobileObj.showCourseInfo();
+
+/*
+										inside     outside      subclass
+		public					+					 +						+
+		private					+          -            -
+		protected       +          +            -
+
+*/

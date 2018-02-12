@@ -1,4 +1,4 @@
-class Course {
+/*class Course {
 	public id: string;
 	private name: string;
 	protected price: number;
@@ -23,7 +23,7 @@ class CourseMobile extends Course {
 
 	/*showCourseInfo() {
 		super.showCourseInfo();
-		console.log(this.author);*/
+		console.log(this.author);
 	}
 }
 
@@ -34,7 +34,7 @@ console.log(courseObj.id);
 var courseMobileObj = new CourseMobile('C013', 'Mobile', 23, "John");
 // courseMobileObj.showCourseInfo();
 
-/*
+
 										inside     outside      subclass
 		public					+					 +						+
 		private					+          -            -

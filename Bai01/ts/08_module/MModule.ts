@@ -1,5 +1,5 @@
 export class Abc {
 	static showInfo() : void {
-		console.log("Abc.showInfo");
+		console.log("Abc.showInfoComplete");
 	}
 }
